@@ -4534,6 +4534,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6910e2407cd484a42a0c2598114751a0, type: 3}
+--- !u!114 &396650507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 715735197060418591, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+  m_PrefabInstance: {fileID: 2111544948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &398443051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19576,6 +19587,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 396650507}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TMPro.TMP_Text, Unity.TextMeshPro
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: GRANTED
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841510913048280298, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258117020156674522, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025875047125177906, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: successText
+      value: GRANTED
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025875047125177906, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onCorrectPassword.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025875047125177906, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: onIncorrectPassword.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6696479239080514294, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
       propertyPath: m_Name
       value: Timemachine
