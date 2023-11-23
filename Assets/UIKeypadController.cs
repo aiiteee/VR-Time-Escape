@@ -12,6 +12,7 @@ public class UIKeypadController : MonoBehaviour
     [SerializeField] private TMP_Text codeDisplay;
     [SerializeField] private float resetTime = 2f;
     [SerializeField] private string successText;
+    [SerializeField] private GameObject travelButton;
     [Space(5f)]
     [Header("Keypad Entry Events")]
     public UnityEvent onCorrectPassword;
@@ -61,6 +62,7 @@ public class UIKeypadController : MonoBehaviour
             onCorrectPassword.Invoke();
             hasUsedCorrectCode = true;
             codeDisplay.text = successText;
+            travelButton.SetActive(true);
         }
     }
 

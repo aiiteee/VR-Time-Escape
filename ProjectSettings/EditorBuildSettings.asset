@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Dinosaur.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Egypt.unity
+    guid: fc2723789a2f9894296fa9427b9288f8
+  - enabled: 1
+    path: Assets/Scenes/Viking.unity
+    guid: d8c75c414070e9e418a190a288b9c4f7
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b7f6dd6b538f69740a4bf92b508c5c46, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 24576bda8fe306d49ad9946cebdeff25, type: 2}
