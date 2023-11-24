@@ -11,7 +11,7 @@ public class Countdown_Timer : MonoBehaviour
 	float startingTimeSeconds =59;
 	
 	float currentTimeMinutes =0;
-	float startingMinutes =29;
+	float startingMinutes =44;
 	
 	[SerializeField]
 	Text countdownTextSeconds;
