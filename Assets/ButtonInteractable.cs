@@ -33,7 +33,7 @@ public class ButtonInteractable : MonoBehaviour
         if (other.gameObject == presser)
         {
             //SceneManager.LoadScene("Dinosaur");
-            button.transform.localPosition = new Vector3(0, 0.015f, 0);
+            button.transform.localPosition = new Vector3(0, 0, 0);
             onRelease.Invoke();
             isPressed = false;
         }
@@ -42,6 +42,16 @@ public class ButtonInteractable : MonoBehaviour
     public void LoadDinosaur()
     {
         SceneManager.LoadScene("Dinosaur");
+    }
+
+    public void LoadEgypt()
+    {
+        SceneManager.LoadScene("Egypt");
+    }
+
+    public void LoadViking()
+    {
+        SceneManager.LoadScene("Viking");
     }
 
 }
