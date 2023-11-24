@@ -13,6 +13,8 @@ public class UIKeypadController : MonoBehaviour
     [SerializeField] private float resetTime = 2f;
     [SerializeField] private string successText;
     [SerializeField] private GameObject travelButton;
+    [SerializeField] private GameObject soduko;
+
     [Space(5f)]
     [Header("Keypad Entry Events")]
     public UnityEvent onCorrectPassword;
@@ -55,14 +57,14 @@ public class UIKeypadController : MonoBehaviour
         {
             onCorrectPassword.Invoke();
             StartCoroutine(ResetKeycode());
-            grantedAudio.Play();
+            //grantedAudio.Play();
         }
         else if(!allowMultipleActivations && !hasUsedCorrectCode)
         {
             onCorrectPassword.Invoke();
             hasUsedCorrectCode = true;
             codeDisplay.text = successText;
-            travelButton.SetActive(true);
+            //travelButton.SetActive(true);
         }
     }
 
@@ -89,6 +91,18 @@ public class UIKeypadController : MonoBehaviour
 
         inputPasswordList.Clear();
         codeDisplay.text = "ABCD";
+    }
+
+    public void setActiveTravelButton()
+    {
+        travelButton.SetActive(true);
+
+    }
+
+    public void setActiveSoduko()
+    {
+        soduko.SetActive(true);
+
     }
 
     //ToDo:

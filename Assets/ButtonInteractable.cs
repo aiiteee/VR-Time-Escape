@@ -56,4 +56,9 @@ public class ButtonInteractable : MonoBehaviour
         SceneManager.LoadScene("Viking");
     }
 
+    public void LoadCompleted()
+    {
+        SceneManager.LoadScene("Completed Menu");
+    }
+
 }

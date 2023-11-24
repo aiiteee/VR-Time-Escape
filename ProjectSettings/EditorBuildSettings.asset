@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start Menu.unity
+    path: Assets/Scenes/(new scene).unity
     guid: b31e2af301624634ca7f8b2a20873a6d
   - enabled: 1
     path: Assets/Scenes/Dinosaur.unity
@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TimeMachineScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: ec55f95aa0b753043a1c03f21ae533b1
+  - enabled: 1
+    path: Assets/Scenes/Completed Menu.unity
+    guid: 84d509f205a87e74ca6f8a913013ad0e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b7f6dd6b538f69740a4bf92b508c5c46, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 24576bda8fe306d49ad9946cebdeff25, type: 2}
