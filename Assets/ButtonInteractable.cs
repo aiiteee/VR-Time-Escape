@@ -11,6 +11,7 @@ public class ButtonInteractable : MonoBehaviour
     public UnityEvent onRelease;
     GameObject presser;
     bool isPressed;
+    public AudioSource buttonSound;
 
     void Start()
     {
@@ -21,10 +22,11 @@ public class ButtonInteractable : MonoBehaviour
     {
         if(!isPressed)
         {
-            button.transform.localPosition = new Vector3(0, 0.003f, 0);
+            button.transform.localPosition = new Vector3(20.6427f, 14.72f, -29.31107f);
             presser = other.gameObject;
             onPress.Invoke();
             isPressed = true;
+            buttonSound.Play();
         }
     }
 
@@ -33,7 +35,7 @@ public class ButtonInteractable : MonoBehaviour
         if (other.gameObject == presser)
         {
             //SceneManager.LoadScene("Dinosaur");
-            button.transform.localPosition = new Vector3(0, 0, 0);
+            button.transform.localPosition = new Vector3(20.6427f, 14.72316f, -29.31107f);
             onRelease.Invoke();
             isPressed = false;
         }
