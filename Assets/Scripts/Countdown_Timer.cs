@@ -7,7 +7,7 @@ public class Countdown_Timer : MonoBehaviour
 {
        void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+       DontDestroyOnLoad( transform.root.gameObject);
     }
 
 	float currentTimeSeconds =0;
