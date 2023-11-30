@@ -8649,6 +8649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Timemachine
       objectReference: {fileID: 0}
+    - target: {fileID: 6696479239080514294, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6696479239080514295, guid: ca502fc8cf274a3439696e56df1bde7a, type: 3}
       propertyPath: m_RootOrder
       value: 5
