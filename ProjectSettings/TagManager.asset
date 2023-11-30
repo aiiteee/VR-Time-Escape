@@ -10,6 +10,10 @@ TagManager:
   - Hands
   - PP1
   - PP2
+  - Puzzle Placeholder
+  - Puzzle Cube
+  - PP3
+  - PP4
   layers:
   - Default
   - TransparentFX
@@ -20,8 +24,8 @@ TagManager:
   - Hands
   - Interactable
   - Slot
-  - 
-  - 
+  - Puzzle Placeholders
+  - Puzzle Cubes
   - 
   - 
   - 

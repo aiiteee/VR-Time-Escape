@@ -14,6 +14,7 @@ public class UIKeypadController : MonoBehaviour
     [SerializeField] private string successText;
     [SerializeField] private GameObject travelButton;
     [SerializeField] private GameObject soduko;
+    [SerializeField] private GameObject doorShelf;
     [SerializeField] private GameObject firstKeypad;
     [SerializeField] private GameObject secondKeypad;
     public float keycodeDigits;
@@ -65,7 +66,6 @@ public class UIKeypadController : MonoBehaviour
         else if(!allowMultipleActivations && !hasUsedCorrectCode)
         {
             onCorrectPassword.Invoke();
-            StartCoroutine(ResetKeypad());
             hasUsedCorrectCode = true;
             codeDisplay.text = successText;
             //firstKeypad.SetActive(false);
@@ -99,6 +99,12 @@ public class UIKeypadController : MonoBehaviour
         codeDisplay.text = "ABCD";
     }
 
+    public void StartTimerKeypad()
+    {
+        StartCoroutine(ResetKeypad());
+    }
+    
+    
     IEnumerator ResetKeypad()
     {
         yield return new WaitForSeconds(resetTime);
@@ -118,8 +124,13 @@ public class UIKeypadController : MonoBehaviour
         soduko.SetActive(true);
 
     }
+    public void setActiveDoor()
+    {
+        doorShelf.SetActive(false);
+        print("Dør virker");
 
-    
+    }
+
 
     //ToDo:
     //Audio på click og denied og granted,
