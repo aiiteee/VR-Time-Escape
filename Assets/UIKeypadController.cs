@@ -65,10 +65,11 @@ public class UIKeypadController : MonoBehaviour
         else if(!allowMultipleActivations && !hasUsedCorrectCode)
         {
             onCorrectPassword.Invoke();
+            StartCoroutine(ResetKeypad());
             hasUsedCorrectCode = true;
             codeDisplay.text = successText;
-            firstKeypad.SetActive(false);
-            secondKeypad.SetActive(true);
+            //firstKeypad.SetActive(false);
+            //secondKeypad.SetActive(true);
             //travelButton.SetActive(true);
         }
     }
@@ -98,6 +99,14 @@ public class UIKeypadController : MonoBehaviour
         codeDisplay.text = "ABCD";
     }
 
+    IEnumerator ResetKeypad()
+    {
+        yield return new WaitForSeconds(resetTime);
+
+        firstKeypad.SetActive(false);
+        secondKeypad.SetActive(true);
+    }
+
     public void setActiveTravelButton()
     {
         travelButton.SetActive(true);
@@ -110,11 +119,7 @@ public class UIKeypadController : MonoBehaviour
 
     }
 
-    public void ResetKeypad()
-    {
-        firstKeypad.SetActive(false);
-        secondKeypad.SetActive(true);
-    }
+    
 
     //ToDo:
     //Audio på click og denied og granted,
