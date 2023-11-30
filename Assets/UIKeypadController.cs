@@ -14,6 +14,9 @@ public class UIKeypadController : MonoBehaviour
     [SerializeField] private string successText;
     [SerializeField] private GameObject travelButton;
     [SerializeField] private GameObject soduko;
+    [SerializeField] private GameObject firstKeypad;
+    [SerializeField] private GameObject secondKeypad;
+    public float keycodeDigits;
 
     [Space(5f)]
     [Header("Keypad Entry Events")]
@@ -29,12 +32,12 @@ public class UIKeypadController : MonoBehaviour
 
     public void UserNumberEntry(int SelectedNum)
     {
-        if (inputPasswordList.Count >= 4)
+        if (inputPasswordList.Count >= keycodeDigits)
             return;
         inputPasswordList.Add(SelectedNum);
         UpdateDisplay();
 
-        if (inputPasswordList.Count >= 4)
+        if (inputPasswordList.Count >= keycodeDigits)
             CheckPassword();
     }
 
@@ -64,6 +67,8 @@ public class UIKeypadController : MonoBehaviour
             onCorrectPassword.Invoke();
             hasUsedCorrectCode = true;
             codeDisplay.text = successText;
+            firstKeypad.SetActive(false);
+            secondKeypad.SetActive(true);
             //travelButton.SetActive(true);
         }
     }
@@ -103,6 +108,12 @@ public class UIKeypadController : MonoBehaviour
     {
         soduko.SetActive(true);
 
+    }
+
+    public void ResetKeypad()
+    {
+        firstKeypad.SetActive(false);
+        secondKeypad.SetActive(true);
     }
 
     //ToDo:
