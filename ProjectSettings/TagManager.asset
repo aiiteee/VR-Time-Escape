@@ -8,6 +8,8 @@ TagManager:
   - Left Hand
   - Button Collider
   - Hands
+  - PP1
+  - PP2
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - UI
   - Hands
   - Interactable
-  - 
+  - Slot
   - 
   - 
   - 
