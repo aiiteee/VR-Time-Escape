@@ -5,10 +5,7 @@ using UnityEngine.UI;
 
 public class Countdown_Timer : MonoBehaviour
 {
-       void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+     
 
 	float currentTimeSeconds =0;
 	float startingTimeSeconds =59;
