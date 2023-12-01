@@ -38,7 +38,7 @@ public class SlotPuzzle : MonoBehaviour
     {
         if(other.gameObject.CompareTag("PP1"))
         {
-            yellowCube.SetActive(true);
+            blueCube.SetActive(true);
             print("'key1 virker");
         }
         if (other.gameObject.CompareTag("PP2"))
@@ -48,7 +48,7 @@ public class SlotPuzzle : MonoBehaviour
         }
         if (other.gameObject.CompareTag("PP3"))
         {
-            blueCube.SetActive(true);
+            yellowCube.SetActive(true);
             print("'key3 virker");
         }
         if (other.gameObject.CompareTag("PP4"))
